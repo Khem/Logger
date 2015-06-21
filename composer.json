@@ -1,0 +1,31 @@
+{
+    "name": "khem/logger",
+    "description": "Log any events and exception in php application",
+    "type": "git",
+    "authors": [
+        {
+            "name": "Khem Thapa",
+            "email": "khem.thapa15@gmail.com"
+        }
+    ],
+
+    "require": {},
+
+    "require-dev": {
+      "phpunit/phpunit": "~4.0",
+      "phpspec/phpspec": "~2.1"
+    },
+
+    "autoload": {
+      "psr-4": {
+        "Khem\\Logger\\": "src"
+      }
+    },
+
+    "autoload-dev": {
+      "psr-4": {
+      "Khem\\Logger\\Test\\": "tests"
+      }
+    }
+
+}
