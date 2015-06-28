@@ -8,7 +8,7 @@ class LogTest extends PHPUnit_Framework_TestCase
     {
         $httpMethod = $_SERVER['REQUEST_METHOD'];
 
-        $this->assertContains($httpdMethod, array('GET', 'POST', 'PUT', 'DELETE'));
+        $this->assertContains($httpMethod, array('GET', 'POST', 'PUT', 'DELETE'));
     }
 
     public function testUserConfig()
