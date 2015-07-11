@@ -4,26 +4,23 @@ use Khem\Logger\Log;
 
 class LogTest extends PHPUnit_Framework_TestCase
 {
-    public function testIfIsValidHttpRequest()
-    {
-        $httpMethod = $_SERVER['REQUEST_METHOD'];
-
-        $this->assertContains($httpMethod, array('GET', 'POST', 'PUT', 'DELETE'));
-    }
-
     public function testUserConfig()
     {
-        //it the user is et
+        $config = include('config.php');
+        $this->assertArrayHasKey('user', $config);
     }
 
     public function testIfLogDirectoryExists()
     {
-        //assertFileExists
+        $config = include('config.php');
+        $this->assertArrayHasKey('dir', $config);
     }
 
     public function testIfLogDirectoryIsWritable()
     {
-
+        $config = include('config.php');
+        $isWritable = is_writable($config['dir']);
+        $this->assertEquals(true,$isWritable);
     }
 
 }
