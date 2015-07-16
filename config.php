@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'user' => 'khem', #$_SESSION['user']
-    'dir'  => '/home/www/',
+    'user' => 'khem',
+    'dir'  => '/home/www/log.txt',
 ];

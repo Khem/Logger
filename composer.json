@@ -1,5 +1,5 @@
 {
-    "name": "khem/logger",
+    "name": "khem/Logger",
     "description": "Log any events and exception in php application",
     "type": "git",
     "authors": [
